@@ -1,13 +1,43 @@
+* {
+  overflow: hidden;
+  color: #5a5a5a;
+  background-color: #1a1a1a;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  /* overflow: hidden !important; */
+}
+h1 {
+  animation-name: TextAnimation;
+  animation-duration: 1200ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(
+    top right,
+    rgb(247, 209, 20),
+    rgb(0, 189, 210)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: top left;
+}
+@keyframes TextAnimation {
+  100% {
+    background-position: bottom right;
+  }
 }
