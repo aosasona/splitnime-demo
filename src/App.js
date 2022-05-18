@@ -1,10 +1,10 @@
-import AnimateText from "./splitnime/components/AnimateText";
+import AnimateItem from "./splitnime/components/AnimateItem";
 function App() {
   return (
     <div className="App">
-      <AnimateText type="word" delay={0.5} duration={600}>
+      <AnimateItem type="word" delay={0.5} duration={600}>
         Splitnime
-      </AnimateText>
+      </AnimateItem>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { SplitWords, SplitLetters, SplitLines } from "../lib/SplitText";
 import { AnimatePresence, motion } from "framer-motion";
 
-const AnimateText = ({
+const AnimateItem = ({
   children,
   type,
   duration,
@@ -76,7 +76,7 @@ const AnimateText = ({
   );
 };
 
-AnimateText.defaultProps = {
+AnimateItem.defaultProps = {
   type: "letter",
   duration: 900,
   offset: 150,
@@ -84,4 +84,4 @@ AnimateText.defaultProps = {
   isVisible: true,
 };
 
-export default AnimateText;
+export default AnimateItem;
